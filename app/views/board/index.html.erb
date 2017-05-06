@@ -1,2 +1,23 @@
-<h1>Board#index</h1>
-<p>Find me in app/views/board/index.html.erb</p>
+<div id="nav" class="container">
+    <!--개인정보 버튼(이후 구현)-->
+    <div id="privateInfo">
+    </div>
+    <!--new button-->
+    <button id="new" class="btn btn-default" type="submit"><a href="/new">NEW</a></button>
+    <!--dropdown box-->
+    <select class="form-control" style="width:20%; display:inline;">
+      <option selected>CATEGORY</option>
+      <option>음식</option>
+      <option>스포츠</option>
+      <option>스터디</option>
+    </select>
+</div>
+
+<div id="donggukmap">
+    <div id="singong" class="gps" onclick="location.href='/detail'">
+      <p style="text-align:right; font-size: 1.5rem;"><b>1</b></p>
+    </div>
+    <div id="socialscience" class="gps" onclick="location.href='/detail'">
+      <p style="text-align:right; font-size: 1.5rem;"><b>2</b></p>
+    </div>
+</div>
