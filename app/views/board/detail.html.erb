@@ -1,0 +1,13 @@
+<h1>Meet another people (map)</h1>
+
+<hr><br>
+
+<% @bookdata.each do |x| %>
+    날짜 : <%= x.bookdate %><br>
+    시간 : <%= x.booktime %><br>
+    장소 : <%= x.bookplace %><br>
+    인원 : <%= x.bookpeople %><br>
+    내용 : <%= x.booktext %><br>
+    <a href="/update_edit/<%= x.id %>">[수정]</a>
+    <a href="/delete/<%= x.id %>">[삭제]</a><br><hr>
+<% end %>
